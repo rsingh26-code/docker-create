@@ -7,5 +7,5 @@ before_install:
  - docker build -t rsingh26-code/docker-create -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true rsingh26-code/docker-create npm run test
+ - docker run -e CI=true rsingh26-code/docker-create npm run test -- --coverage
 
